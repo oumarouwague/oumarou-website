@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH-COSMETIQUES-PARFUMERIE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ZÉNITH COSMÉTIQUES ET PARFUMERIE</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <h1>WELCOME TO ZÉNITH COSMÉTIQUES ET PARFUMERIE</h1>
+            <p>Trouvez les meilleurs parfums pour vous !</p>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="shop-section">
+            <h2>Shop Our Collection</h2>
+            <div class="products">
+                <!-- Example Product -->
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DE ODORANT CAP PLUS ANGÉLIQUE.jpg" alt="Perfume 1">
+                    <h3>DE ODORANT CAP PLUS ANGÉLIQUE </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="EAU DE PARFUM CAPRICE.jpg" alt="Perfume 1">
+                    <h3>EAU DE PARFUM CAPRICE</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT CAP PLUS COLOGNE.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT CAP PLUS COLOGNE</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT CAPRICE.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT CAPRICE 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT INTENSE BELLISIMA.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT INTENSE BELLISIMA </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT INTENSE INDULGE.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT INTENSE INDULGE </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT LUNE D’ÉTÉ.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT LUNE D’ÉTÉ </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT MISTER PERFECT.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT MISTER PERFECT </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="DÉODORANT MUSE LEGEND.jpg" alt="Perfume 1">
+                    <h3>DÉODORANT MUSE LEGEND </h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-name="Perfume 1" data-price="50.00">
+                    <img src="perfume1.jpg" alt="Perfume 1">
+                    <h3>Perfume 1</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Perfume Store propose des parfums de qualité depuis 2020. Nous nous engageons à vous proposer les meilleurs parfums du monde entier.</p>
+            <p>Phone Number:0022374550885</p>
+            <p>Email:</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Cart Section -->
+        <!-- Cart Section -->
+<section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </div>
+    <p>Total: $<span id="total-price">0.00</span></p>
+    <button id="checkout-button">Checkout</button>
+    <form id="payment-form" style="display: none;">
+        <div id="card-element"><!-- Stripe's card element will go here --></div>
+        <button type="submit" id="submit-button">Submit Payment</button>
+    </form>
+    <div id="payment-message"></div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perfume Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
